@@ -37,4 +37,6 @@ Here are what the columns represent:
 <br />•	pub.rec: The borrower's number of derogatory public records (bankruptcy filings, tax liens, or judgments).
 
  
-![](images.jpg)
+<p align="center">
+ ![](images.jpg)
+</p>
