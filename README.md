@@ -24,7 +24,6 @@ Naive Bayes provides a way that calculates the probability of a piece of data be
 ### K-Nearest Neighbours
 The k-nearest neighbors (KNN) algorithm is a simple, supervised machine learning algorithm that can be used to solve both classification and regression problems. KNN tries to predict the correct class for the test data by calculating the distance between the test data and all the training points. Then select the K number of points which is closet to the test data. The KNN algorithm calculates the probability of the test data belonging to the classes of ‘K’ training data and class holds the highest probability will be selected. KNN is easy to implement and understand, but has a major drawback of becoming significantly slows when the size of used dataset grows.
 
-
 ### Decision Tree
 Decision tree builds classification or regression models in the form of a tree structure. It utilizes an if-then rule set which is mutually exclusive and exhaustive for classification. The rules are learned sequentially using the training data one at a time. Each time a rule is learned, the tuples covered by the rules are removed. This process is continued on the training set until meeting a termination condition. The decision tree is constructed in a top-down recursive divide-and-conquer manner. All attributes should be categorical. Otherwise, they should be discretized in advance. Attributes in the top of the tree have more impact towards in the classification and they are identified using the information gain concept. 
 
@@ -37,9 +36,9 @@ Random forest classifier is a meta-estimator that fits a number of decision tree
 The support vector machine (SVM) is a classifier that represents the training data as points in space separated into categories by a gap as wide as possible. New points are then added to space by predicting which category they fall into and which space they will belong to. A SVM is a supervised ML model that uses classification algorithms for two-group classification problems. After giving an SVM model sets of labeled training data for each category, they enable to categorize new text. A SVM takes these data points and outputs the hyperplane (i.e., two dimensions as a line) that best separates the tags. This line is the decision boundary. Support vectors are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane. The margin of the classifier are maximised by using these support vectors. Deleting the support vectors will change the position of the hyperplane. 
 
 ## K-fold Cross-Validation
-The k-fold cross-validation procedure is a standard method for estimating the performance of a ML algorithm or configuration on a dataset. Use cross-validation to detect overfitting, failing to generalize a pattern. In the classification model it used to find the the highest accuracy by using the optimal hyper parameters.
+The k-fold cross-validation procedure is a standard method for estimating the performance of a ML algorithm or configuration on a dataset. Use cross-validation to detect overfitting, failing to generalize a pattern. In the classification model it used to find the the highest accuracy by using the optimal hyperparameters.
 
-A single run of the k-fold cross-validation procedure may result in a noisy estimate of model performance. Different splits of the data may result in very different results. Repeated k-fold cross-validation provides a way to improve the estimated performance of a ML model. This involves simply repeating the cross-validation procedure multiple times and reporting the mean result across all folds from all runs. This mean result is expected to be a more accurate estimate of the true unknown underlying mean performance of the model on the dataset, as calculated using the standard error.
+A single run of the k-fold cross-validation procedure may result in a noisy estimate of model performance. Different splits of the data may result in very different outcomes. Repeated k-fold cross-validation provides a way to improve the estimated performance of a ML model. This involves simply repeating the cross-validation procedure multiple times and reporting the mean result across all folds from all runs. This mean result is expected to be a more accurate estimate of the true unknown underlying mean performance of the model on the dataset, as calculated using the standard error.
 
 ## Grid Search
 Grid search allows to find the optimal values of the hyperparameters in any model to get higher accuracy. Hyperparameter optimization or tuning is the problem of choosing a set of optimal hyperparameters for a learning algorithm. A hyperparameter is a parameter whose value is used to control the learning process. By contrast, the values of other parameters (typically node weights) are learned. 
@@ -65,7 +64,7 @@ A model hyperparameter is a configuration that is external to the model and whos
 ## Dataset Explanation
 This repository contains Python implementation of the supervised learning algorithms selected for predicting Loan repayments.
 
-In this project, publicly available data from LendingClub.com.are explored. Lending Club connects borrowers with investors. Hopefully, as an investor you would want to invest in people who showed a profile of having a high probability of payback. An optimised model that will help predict this packback is highly desirable.
+In this project, publicly available data from LendingClub.com.are explored. Lending Club connects borrowers with investors. Hopefully, any investor would want to invest in people who showed a profile of having a high probability of payback. An optimised model that will help predict this packback is then highly desirable.
 
 Lending club had a very interesting year in 2016, so let's check out some of their data and keep the context in mind. lending data from 2007-2010 are used in an attempt to classify and predict whether or not the borrower paid back their loan in full. You can download the data from here or just use the csv already provided as it has been cleaned of NA values.
 
@@ -85,5 +84,3 @@ Here are what the columns represent:
 <br />•	inq.last.6mths: The borrower's number of inquiries by creditors in the last 6 months.
 <br />•	delinq.2yrs: The number of times the borrower had been 30+ days past due on a payment in the past 2 years.
 <br />•	pub.rec: The borrower's number of derogatory public records (bankruptcy filings, tax liens, or judgments).
-
-
