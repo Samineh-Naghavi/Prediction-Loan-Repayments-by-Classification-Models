@@ -43,6 +43,26 @@ A single run of the k-fold cross-validation procedure may result in a noisy esti
 
 Repeated k-fold cross-validation provides a way to improve the estimated performance of a machine learning model. This involves simply repeating the cross-validation procedure multiple times and reporting the mean result across all folds from all runs. This mean result is expected to be a more accurate estimate of the true unknown underlying mean performance of the model on the dataset, as calculated using the standard error.
 
+## Grid search
+Hyperparameter optimization or tuning is the problem of choosing a set of optimal hyperparameters for a learning algorithm. A hyperparameter is a parameter whose value is used to control the learning process. By contrast, the values of other parameters (typically node weights) are learned. The traditional way of performing hyperparameter optimization has been grid search
+Grid search allows you to find the optimal values of the hyper parameters in any model to get higher accuracy.
+
+#### What is a parameter in a machine learning learning model?
+
+A model parameter is a configuration variable that is internal to the model and whose value can be estimated from the given data.
+
+<br />•	They are required by the model when making predictions.
+<br />•	Their values define the skill of the model on your problem.
+<br />•	They are estimated or learned from data. 
+
+#### What is a hyperparameter in a machine learning learning model?
+
+A model hyperparameter is a configuration that is external to the model and whose value cannot be estimated from data.
+
+<br />•	They are often used in processes to help estimate model parameters.
+<br />•	They are often specified by the practitioner.
+<br />•	They can often be set using heuristics. 
+
 ## Pros and Cons of various Machine Learning Regression algorithms: 
 ![](images1.jpg)
 
